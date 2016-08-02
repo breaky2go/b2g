@@ -1,0 +1,14 @@
+<template name="bt_orders">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <h3 class="page-header">Bäcker Terminal</h3>
+
+      {{#each orders}}
+        <h2>Bestellung {{@index}}</h2>
+        {{#each groupedItems}}
+          <h3>{{quantity}}x {{variants.title}}</h3>
+        {{/each}}
+      {{/each}}
+    </div>
+  </div>
+</template>
