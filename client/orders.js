@@ -1,3 +1,4 @@
+import { Orders } from "/lib/collections";
 Meteor.subscribe("Orders");
     
     Template.bt_orders.helpers({
